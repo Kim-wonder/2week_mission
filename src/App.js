@@ -19,16 +19,15 @@
 import React from 'react';
 import TodoList from './pages/TodoList';
 import './App.css';
-// import { Route, Routes } from './shared/Router';
+import { Route, Routes } from './shared/Router';
 
 
 function App() {
   return ( 
-    // <Routes>
-      <TodoList />
-    //   <Route path="/" elemont={<TodoList/>}/>
-    //   <Route path="/:id" elemont={<Detail/>}/>
-    // </Routes>
+    <Routes>
+      <Route path="/" elemont={<TodoList/>}/>
+      <Route path="/:id" elemont={<Detail/>}/>
+    </Routes>
 
   )
 }
